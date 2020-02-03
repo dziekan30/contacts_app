@@ -1,0 +1,4 @@
+{
+  id: group.id,
+  name: group.name
+}
