@@ -1,41 +1,58 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-# system 'say_hello'
-# contact = Contact.new(
-#                       first_name: Faker::Name.first_name"Sideshow"
-#                       last_name: "Bob"
-#                       email: "evil@bigfeet.co"
-#                       phone_number: "789 333 5555"
-#                       )
-
-# contact.save
-
-# 1000.times do 
-#   first_name = Faker::Name.first_name
-#   last_name = Faker::Name.last_name
-# ​
-#   contact = Contact.new(
-#                         first_name: first_name,
-#                         last_name: last_name,
-#                         email: Faker::Internet.free_email(name: "#{first_name}.#{last_name}"),
-#                         phone_number: Faker::PhoneNumber.phone_number
-#                         )
-#   contact.save
-# end
-
-ContactGroup.create(contact_id: , group_id: )
-ContactGroup.create(contact_id: , group_id: )
-ContactGroup.create(contact_id: , group_id: )
-ContactGroup.create(contact_id: , group_id: )
-ContactGroup.create(contact_id: , group_id: )
-ContactGroup.create(contact_id: , group_id: )
-ContactGroup.create(contact_id: , group_id: )
-ContactGroup.create(contact_id: , group_id: )
-ContactGroup.create(contact_id: , group_id: )
-ContactGroup.create(contact_id: , group_id: )
-ContactGroup.create(contact_id: , group_id: )
+# Group.create!([
+#   {name: "Family"},
+#   {name: "Business"},
+#   {name: "Chicago"},
+#   {name: "Speed Dial"}
+# ])
+# User.create!([
+#   {name: "John Finkelstin", email: "crazyrider54@gmail.com", password: "password", password_confirmation: "password"},
+#   {name: "Suzy Y", email: "sue@gmail.com", password: "password", password_confirmation: "password"}
+# ])
+# Contact.create!([
+#   # {first_name: "Kathy", last_name: "Bix", email: "kathybix@gmail.com", phone_number: "2221114565", middle_name: "sas", bio: "laying on the beach", user_id: 1},
+#   {first_name: "Romeo", last_name: "Capulet", email: "nil@gmail.com", phone_number: nil, middle_name: nil, bio: nil, user_id: 1},
+#   {first_name: "Rok", last_name: "Ca", email: "hello@hotmail.com", phone_number: nil, middle_name: nil, bio: nil, user_id: 1},
+#   {first_name: "Josh", last_name: "Nixonn", email: "joshnnixonn@gmail.com", phone_number: "555-555-5555", middle_name: "Yoda", bio: "love star wars", user_id: 2},
+#   {first_name: "Railey", last_name: "Mikelson", email: "sweetkitty222@gmail.com", phone_number: "222-333-4567", middle_name: "rciky", bio: "watching Tv, whatever", user_id: 2},
+#   {first_name: "Konrad", last_name: "Mikelson", email: "smalsmash@gmail.com", phone_number: "222-222-5553", middle_name: "Loco", bio: "a very boring person with very ...", user_id: 2},
+#   {first_name: "Mike", last_name: "Johnson", email: "mikejohnson@gmail.com", phone_number: "333-222-2453", middle_name: "G", bio: "workin in furniture store", user_id: 2},
+#   {first_name: "Romeo", last_name: "Capulet", email: "nil1@gmail.com", phone_number: nil, middle_name: nil, bio: nil, user_id: 2},
+#   {first_name: "Jessica", last_name: "Henderson", email: "bigsmash@gmail.com", phone_number: "222-222-6666", middle_name: "Hulk", bio: "Very very very very very very .......", user_id: 2},
+#   {first_name: "Jessica", last_name: "Henderson", email: "bigsmash@hotmail.com", phone_number: "222-222-6666", middle_name: "Hulk", bio: "Very very very very very very .......", user_id: 2},
+#   {first_name: "Bob", last_name: "Bross", email: "smalsmasheee@gmail.com", phone_number: "222-222-5553", middle_name: "Mario", bio: nil, user_id: 1}
+# ])
+# ContactGroup.create!([
+#   {contact_id: 1, group_id: 4},
+#   {contact_id: 1, group_id: 2},
+#   {contact_id: 2, group_id: 2},
+#   {contact_id: 3, group_id: 2},
+#   {contact_id: 3, group_id: 1},
+#   {contact_id: 3, group_id: 4},
+#   {contact_id: 3, group_id: 2},
+#   {contact_id: 5, group_id: 1},
+#   {contact_id: 5, group_id: 2},
+#   {contact_id: 7, group_id: 2},
+#   {contact_id: 7, group_id: 3},
+#   {contact_id: 7, group_id: 4},
+#   {contact_id: 1, group_id: 4},
+#   {contact_id: 1, group_id: 1},
+#   {contact_id: 4, group_id: 2},
+#   {contact_id: 4, group_id: 1},
+#   {contact_id: 10, group_id: 3},
+#   {contact_id: 10, group_id: 4},
+#   {contact_id: 10, group_id: 1},
+#   {contact_id: 2, group_id: 1},
+#   {contact_id: 2, group_id: 4},
+#   {contact_id: 2, group_id: 2},
+#   {contact_id: 6, group_id: 2},
+#   {contact_id: 6, group_id: 1},
+#   {contact_id: 9, group_id: 1},
+#   {contact_id: 9, group_id: 4},
+#   {contact_id: 9, group_id: 2},
+#   {contact_id: 8, group_id: 2},
+#   {contact_id: 8, group_id: 3},
+#   {contact_id: 8, group_id: 4},
+#   {contact_id: 11, group_id: 3},
+#   {contact_id: 11, group_id: 1},
+#   {contact_id: 11, group_id: 2}
+# ])

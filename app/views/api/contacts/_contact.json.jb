@@ -1,0 +1,15 @@
+{
+  id: contact.id,
+  first_name: contact.first_name,
+  middle_name: contact.middle_name,
+  last_name: contact.last_name,
+  full_name: contact.full_name,
+  email: contact.email,
+  phone_number: contact.phone_number,
+  bio: contact.bio,
+  user: ( render partial: "api/users/user.json.jb", locals: {user: contact.user} ),
+  groups: contact.groups.map { |group| render partial: "api/groups/group.json.jb",  locals: {group: group} },
+  formatted: {
+              updated_at: contact.friendly_updated_at
+              }
+}
